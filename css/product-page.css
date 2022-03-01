@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+}
+body > .row{
+    height: 100%;
+}
+main{
+    margin: 10px 0 0 0;
+    background-color: black;
+    color: white;
+    width: 80%;
+}
+.container{
+    width: 90%;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+aside{
+    margin: 10px;
+    width: 30%;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    background-color: black;
+    color: white;
+}
+.content{
+    display: flex;
+}
+.col{
+    width: 50%;
+    margin: 20px;
+}
+.img{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+.dots{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 10px auto;
+}
+.dot{
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border-radius: 1000px;
+}
+.dot.selected{
+    background-color: #EB70FF;
+}
+.reviews-container{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.reviews__header{
+    border-bottom: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+.stars{
+    margin: 0 4px;
+}
+.bi-star-fill{
+    color: #C1C1C1;
+}
+.bi-star-fill.active{
+    color: #EB70FF;
+}
+.review{
+    background-color: #1C1C1C;
+    padding: 10px;
+    margin-top: 30px; 
+    border-radius: 5px;
+    color: white;
+}
+.review-header{
+    display: flex;
+    justify-content: flex-start;
+}
+.review-content{
+    margin: 10px 0 0 0;
+}
+.text h1{
+    border-bottom: 2px solid white;
+}
+.text h2{
+    text-align: right;
+}
+.main-info{
+    width: 100%;
+}
+.buttons .btn{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.author-img{
+    background-color: white;
+    border-radius: 100px;
+    margin: 5px 20px 5px 0;
+
+    width: 60px;
+    height: 60px;
+}
+.link-to-chat{
+    color: #f8cbff
+}
+.preson-text-info > *{
+    margin: 10px 0;
+}
+.preson-name{
+    overflow-wrap: anywhere;
+    margin: 0 5px;
+}
+
+@media (max-width: 1430px) {
+    .person-info{
+        display: block;
+    }
+    .person-info .stars{
+        margin: 0;
+    }
+}
+@media (max-width: 1040px) {
+    .container{
+        width: 80%;
+    }
+    body > .row{
+        flex-direction: column;
+    }
+    aside{
+        order: -1;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    main{
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 840px) {
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width: 750px) {
+    .container{
+        width: 98%;
+    }
+    .col{
+        margin: 20px 5px;
+    }
+}
+@media (max-width: 650px) {
+    .content{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .container{
+        width: 80%;
+    }
+}
+@media (max-width: 460px) {
+    .container{
+        width: 90%;
+    }
+}
