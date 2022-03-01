@@ -1,0 +1,536 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('../fonts/RockSalt/RockSalt-Regular.ttf');
+}
+@font-face {
+    font-family: 'Oxanium';
+    src: url('../fonts/Oxanium/Oxanium-Regular.ttf');
+}
+
+/* Colors:
+   light purple: #EB70FF */
+
+/* Basic styles */
+html, body{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxanium';
+}
+
+/* Gentral styles */
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    padding-top: 1px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row_center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row_jfs{
+    display: flex;
+    justify-content: flex-start;
+}
+.row_jfc{
+    display: flex;
+    justify-content: center;
+}
+.no-style{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: rgb(0, 0, 0, 0)
+}
+.btn{
+    border: 0;
+    padding: 15px;
+    transition: 0.3s;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-red{
+    border: 0;
+    padding: 15px;
+    transition: 0.3s;
+    background-color: #FF9191;
+}
+.btn-red:hover{
+    background-color: #ff6a6a;
+}
+.btn-green{
+    border: 0;
+    padding: 15px;
+    transition: 0.3s;
+    background-color: #9CFFE1;
+}
+.btn-green:hover{
+    background-color: #68ffd2;
+}
+/* Header styles */
+header{
+    width: 100%;
+    height: 120px;
+
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    overflow: hidden;
+
+    box-shadow: 0px 3px #EB70FF;
+}
+.main-logo{
+    font-family: 'Rock Salt';
+    color: white;
+    transition: 2s;
+}
+.main-logo:hover{
+    cursor: pointer;
+    color: #EB70FF;
+}
+.main-logo__wrapper{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    width: 300px;
+    height: 100%;
+}
+.background{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    transition: 5s;
+}
+
+.line {
+    position: absolute;
+    background-color: white;
+    transition: 5s;
+}
+.line-1{
+    animation: 60s ease-in 0s infinite alternate both running line-1-swim;; 
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    transform: rotate(50deg);
+}
+.background:hover > .line-1{
+    top: 15px;
+    left: 220px;   
+}
+.line-2 {
+    animation: 65s ease-in 0s infinite alternate both running line-2-swim;; 
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    transform: rotate(50deg);
+}
+.background:hover > .line-2{
+    top: 10px;
+    left: 150px; 
+    transform: rotate(30deg);  
+}
+.line-3 {
+    animation: 70s ease-in 0s infinite alternate both running line-3-swim;; 
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    transform: rotate(10deg);
+}
+.background:hover > .line-3{
+    top: 90px;
+    left: 600px;   
+    transform: rotate(50deg);
+}
+.line-4 {
+    animation: 75s ease-in 0s infinite alternate both running line-4-swim;; 
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    transform: rotate(120deg);
+}
+.background:hover > .line-4{
+    top: 50px;
+    left: 350px; 
+    transform: rotate(150deg);  
+}
+.line-5 {
+    animation: 80s ease-in 0s infinite alternate both running line-5-swim;; 
+    position: absolute;
+    top: 50%;
+    left: 835px;
+    background-color: white;
+    width: 200px;
+    height: 1px;
+    transform: rotate(-80deg);
+}
+.background:hover > .line-5{
+    top: 60px;
+    left: 800px;   
+    transform: rotate(-50deg);
+}
+.line-6 {
+    animation: 85s ease-in 0s infinite alternate both running line-6-swim;; 
+    position: absolute;
+    top: 30%;
+    left: 289px;
+    background-color: white;
+    width: 500px;
+    height: 1px;
+    transform: rotate(-110deg);
+}
+.background:hover > .line-6{
+    top: 50px;
+    left: 350px; 
+    transform: rotate(-80deg);  
+}
+.line-7 {
+    animation: 90s ease-in 0s infinite alternate both running line-7-swim;; 
+    position: absolute;
+    top: 50%;
+    left: 991px;
+    background-color: white;
+    width: 90px;
+    height: 1px;
+    transform: rotate(300deg);
+}
+.background:hover > .line-7{
+    top: 60%;
+    left: 600px; 
+    transform: rotate(320deg);  
+}
+.line-8 {
+    animation: 95s ease-in 0s infinite alternate both running line-8-swim;; 
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    background-color: white;
+    width: 230px;
+    height: 1px;
+    transform: rotate(-5deg);
+}
+.background:hover > .line-8{
+    top: 50px;
+    left: 200px;   
+    transform: rotate(10deg);
+}
+.line-9 {
+    animation: 100s ease-in 0s infinite alternate both running line-9-swim;; 
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    background-color: white;
+    width: 100px;
+    height: 1px;
+    transform: rotate(0deg);
+}
+.background:hover > .line-9{
+    top: 80px;
+    left: 100px;   
+    transform: rotate(10deg);
+}
+.line-10 {
+    animation: 105s ease-in 0s infinite alternate both running line-10-swim;; 
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    background-color: white;
+    width: 300px;
+    height: 1px;
+    transform: rotate(99deg);
+}
+.background:hover > .line-10{
+    top: 50px;
+    left: 400px;   
+    transform: rotate(80deg);
+}
+.line-purple {
+    background-color: #EB70FF;
+}
+.background:hover{
+    background-color: #EB70FF;
+}
+.background:hover > .line-purple{
+    background-color: black;
+    height: 20px;
+}
+.background:hover > .line{
+    height: 5px;
+}
+.line{
+    font-size: 1.2em;
+    color: #1C1C1C;
+}
+@keyframes line-1-swim {
+    from { top: -20px; left: 1200px; transform: rotate(10deg); } to { top: 60px; left: 300px; transform: rotate(230deg); }
+}
+@keyframes line-2-swim {
+    from { top: -70px; left: 300px; transform: rotate(360deg); } to { top: 10px; left: -300px; transform: rotate(110deg); }
+}
+@keyframes line-3-swim {
+    from { top: -50px; left: 100px; transform: rotate(20deg); } to { top: 30px; left: 600px; transform: rotate(260deg); }
+}
+@keyframes line-4-swim {
+    from { top: -100px; left: 600px; transform: rotate(350deg); } to { top: 40px; left: -300px; transform: rotate(140deg); }
+}
+@keyframes line-5-swim {
+    from { top: -60px; left: 690px; transform: rotate(30deg); } to { top: 60px; left: 900px; transform: rotate(290deg); }
+}
+@keyframes line-6-swim {
+    from { top: -8px; left: 120px; transform: rotate(340deg); } to { top: 1230px; left: -300px; transform: rotate(170deg); }
+}
+@keyframes line-7-swim {
+    from { top: -23px; left: 800px; transform: rotate(40deg); } to { top: 940px; left: 1200px; transform: rotate(310deg); }
+}
+@keyframes line-8-swim {
+    from { top: -28px; left: 10px; transform: rotate(330deg); } to { top: 450px; left: -300px; transform: rotate(200deg); }
+}
+@keyframes line-9-swim {
+    from { top: -20px; left: 200px; transform: rotate(50deg); } to { top: 330px; left: 1500px; transform: rotate(340deg); }
+}
+@keyframes line-10-swim {
+    from { top: -100px; left: 1500px; transform: rotate(320deg); } to { top: 10px; left: -300px; transform: rotate(230deg); }
+}
+
+/* Nav ctyles */
+nav{
+    margin-top: 130px;
+
+    padding: 10px;
+
+    background-color: black;
+    color: white;
+}
+.search-ui{
+    display: flex;
+}
+.dropdowns{
+    display: flex;
+}
+.dropdown:hover .dropdown__content{
+    opacity: 1;
+    top: auto;
+}
+.dropdown:hover > .drowpdown__header{
+    background-color: #EB70FF;
+    color: white;
+
+    cursor: pointer;
+}
+.drowpdown__header:focus + .dropdown__content{
+    opacity: 1;
+    top: auto;
+}
+.drowpdown__header:focus{
+    background-color: #EB70FF;
+    color: white;
+
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+}
+.dropdowns > div{
+    margin: 0 10px;
+}
+.drowpdown__header{
+    transition: 0.2s;
+    background-color: white;
+    color: black;
+
+    padding: 10px;
+}
+.dropdown__content{
+    width: 100%;
+    top: -10000px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    transition: opacity 0.2s;
+    opacity: 0;
+
+    position: absolute;
+
+    z-index: 1;
+}
+.dropdown__content-row{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.dropdown__content-row:first-child{
+    border-top: 1px solid black;
+}
+.dropdown__content-row:last-child{
+    border-bottom: 0px;
+}
+.dropdown__content-row:hover{
+    background-color: #EB70FF;
+    color: white;
+}
+.user-profile{
+    display: flex;
+}
+.user-profile > div{
+    margin: 0 10px;
+}
+.user-name{
+    border-bottom: 2px solid white;
+}
+.user-money{
+    font-size: 0.7em;
+    text-align: right;
+    margin-top: 5px;
+}
+.person-img{
+    min-width: 55px;
+    min-height: 55px;
+    max-width: 55px;
+    max-height: 55px;
+    background-color: white;
+    border-radius: 50px;
+}
+.cart{
+    position: relative;
+}
+.cart-icon{
+    font-size: 2em;
+}
+.products-count{
+    position: absolute;
+    right: -20px;
+    top: 0px;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #EB70FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    margin: 0 5px;
+    display: flex;
+    align-items: flex-start;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    align-items: stretch;
+}
+.search__input{
+    padding: 10px;
+    width: 85%;
+}
+.search__input:hover{
+    border: 2px solid #EB70FF;
+}
+.search__input:focus{
+    border: 2px solid #EB70FF;
+    outline: 0;
+}
+.search__button{
+    outline: none;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+    padding: 10px;
+    width: 15%;
+
+    transition: 0.2s;
+}
+.search__button:hover{
+    background-color: #EB70FF;
+    color: white;
+    cursor: pointer;
+}
+.search__button:focus{
+    background-color: #EB70FF;
+    color: white;
+    cursor: pointer;
+}
+.slidebar-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: relative;
+    top: 3px;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        width: 90%
+    }
+}
+@media (max-width: 950px) {
+    .container{
+        width: 98%
+    }
+    .text-info{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+}
+@media (max-width: 740px) {
+    .slidebar-toggle{
+        display: block;
+    }
+    .search-ui{
+        padding: 20px;
+        position: absolute;
+        top: 0px;
+        left: -200%;
+
+        height: 100%;
+        box-sizing: border-box;
+        flex-direction: column;
+
+        z-index: 2;
+
+        justify-content: space-between;
+        background-color: #1C1C1C;
+    }
+    .bi-arrow-left-circle{
+        display: none;
+    }
+    .slidebar-toggle{
+        font-size: 3em;
+    }
+}
